@@ -18,15 +18,11 @@ let package = Package(
       name: "AddaMeModels",
       targets: ["AddaMeModels"]),
   ],
-  dependencies: [
-    .package(path: "\(Path.Container.core)/KeychainService"),
-    .package(path: "\(Path.Container.core)/FoundationExtension"),
-  ],
-  
+  dependencies: [],
   targets: [
     .target(
       name: "AddaMeModels",
-      dependencies: ["KeychainService", "FoundationExtension"]),
+      dependencies: []),
     .testTarget(
       name: "AddaMeModelsTests",
       dependencies: ["AddaMeModels"]),
